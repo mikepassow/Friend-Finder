@@ -86,3 +86,13 @@ var friends = [
     },
     
 ]
+
+module.exports = friends;
+
+// for( i = 0; i< userAnswer.length; i++){
+//     for(j =0; j < whatMikeSay.length; j++){
+//       userAnswer[i]-whatMikeSays[j];
+//       return freind
+//     }
+//   }
+  
