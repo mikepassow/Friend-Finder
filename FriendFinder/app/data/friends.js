@@ -1,20 +1,19 @@
 
-
 var friends = [
     {
-        name: "michael",
-        photo: "michael.jpg",
-        scores: [
-            "2",
-            "4",
-            "5",
-            "1",
-            "3",
-            "1",
-            "5",
-            "4",
-            "1",
-            "5",
+        "name": "michael",
+        "photo": "michael.jpg",
+        "scores": [
+            2,
+            4,
+            5,
+            1,
+            3,
+            1,
+            5,
+            4,
+            1,
+            5,
         ],
     },
 
