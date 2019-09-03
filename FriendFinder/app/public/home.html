@@ -64,18 +64,17 @@
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function(){
-                    if ($(this).val()=== "" ) {
+                    if ($(this).val() === "" ) {
                         isValid = false;
-                    }
+                    };
                 });
-    
         $(".chosen-select").each(function(){
             if($(this).val() === "") {
                 isValid = false;
             }
         });
         return isValid;
-    
+            }
         if (validataForm()){
             var userData = {
                 name: $("#name").val(),
@@ -108,8 +107,8 @@
                 alert("Please fill out the form before submitting!")
             }
             return false;
-        }});
-
+        });
+    
 
 
     </script>

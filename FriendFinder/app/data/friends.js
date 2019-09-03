@@ -4,16 +4,16 @@ var friends = [
         "name": "michael",
         "photo": "michael.jpg",
         "scores": [
-            2,
-            4,
-            5,
-            1,
-            3,
-            1,
-            5,
-            4,
-            1,
-            5,
+           "2",
+           "4",
+           "5",
+            "1",
+            "3",
+            "1",
+            "5",
+            "4",
+            "1",
+            "5",
         ],
     },
 
@@ -89,10 +89,4 @@ var friends = [
 
 module.exports = friends;
 
-// for( i = 0; i< userAnswer.length; i++){
-//     for(j =0; j < whatMikeSay.length; j++){
-//       userAnswer[i]-whatMikeSays[j];
-//       return freind
-//     }
-//   }
   
