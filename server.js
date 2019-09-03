@@ -6,9 +6,7 @@ var bodyParser = require('body-parser');
 
 var PORT = process.env.PORT || 8080;
 
-var jsonParser = bodyParser.json();
-
-var urlencodedParser = bodyParser.urlencoded ({extended: false });
+app.use(bodyParser.urlencoded ({extended: true }));
 
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }));
@@ -25,10 +23,3 @@ require("./friendfinder/app/routing/html-routes.js")(app);
 app.listen(PORT, function() {
     console.log('App listening on PORT: ' + PORT)
 });
-// friendfinder
-// ---views
-// ------html
-// ---routes
-// ------route to html file`
-// ---MSFIDOCredentialAssertion
-// ServiceWorkerRegistration.js
