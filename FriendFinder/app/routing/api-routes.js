@@ -1,10 +1,12 @@
+
+
 var friends = require("../data/friends.js");
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res){
         res.json(friends);
     });
-        app.post("/api/friends", function (req, res){
+        app.post("/api/app/data/friends", function (req, res){
 
             var bestMatch = {
                 name: "",
@@ -45,4 +47,7 @@ module.exports = function (app) {
             //return a json with the users bestMatch. 
             res.json(bestMatch);
         });
+        app.get("/api/survey", function(req,res){
+            res.render("/friendfinder/app/data/public/survey")
+        })
 }

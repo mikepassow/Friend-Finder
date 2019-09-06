@@ -16,6 +16,7 @@
 </head>
 <body>
     
+
 <div class="container">
 
     <div class="jumbotron">
@@ -93,22 +94,26 @@
                 ]
             };
 
-            var currentURL = window.location.origin;
+           // var currentURL = window.location.origin;
 
-            $.post(currentURL + "/api/friends", userData, function(data){
+            $.post("/api/data/friends", userData, function(data){
                 $("#matchName").text(data.name);
                 $("#matchImg").attr("src", data.photo);
 
                 $("resultsModal").modal("toggle");
 
             });
+
+            // app.post('/api/friends', function (req, res) {
+            // res.send(data.name)
+            // })
         }
             else{
                 alert("Please fill out the form before submitting!")
             }
             return false;
         });
-    
+        validataForm();
 
 
     </script>
