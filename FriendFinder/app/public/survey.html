@@ -31,7 +31,7 @@
    <hr>
 
    <h3><strong>Question 1</strong></h3>
-   <h4>Your mind is always thinking aobut new ideas.</h4>
+   <h4>Your mind is always thinking about new ideas.</h4>
    <select data-placeholder="" class="chosen-select" id="q1">
     <option value=""></option>
     <option value="1">1 (Strongly Disagree)</option>
@@ -142,6 +142,7 @@
 <br>
 <br>
 
+
 <button type="submit" class="btn btn-block btn-lg btn-primary form-control" id="submit">Submit</button>
 
 
@@ -151,6 +152,63 @@
     </div>
 </footer>
 </div>
+<script>
+    $("#submit").on("click", function(e){
+        e.preventDefault();
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function(){
+                    console.log(this);
+                    if ($(this).val() === "" ) {
+                        isValid = false;
+                    };
+                });
+        $(".chosen-select").each(function(){
+            if($(this).val() === "") {
+                isValid = false;
+            }
+        });
+        return isValid;
+            }
+        if (validateForm()){
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+                
+            };
 
+           var currentURL = window.location.origin;
+
+            $.post("/api/friends", userData, function(data){
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
+
+                $("resultsModal").modal("toggle");
+
+            });
+
+            app.post('/api/friends', function (req, res) {
+            res.send(data.name)
+            })
+        }
+            else{
+                alert("Please fill out the form before submitting!")
+            }
+            return false;
+        });
+        
+</script>
 </body>
 </html>
