@@ -70,7 +70,7 @@ var friends = [
 
     {
         name: "billy",
-        photo: "https://fsmedia.imgix.net/75/4b/a2/ee/9687/4ae0/979f/276430710e5c/stranger-things-season-3-monster-theory-spoilers-billy.png?rect=227%2C0%2C409%2C409&auto=compress&w=1200",
+        photo: "https://images.immediate.co.uk/production/volatile/sites/3/2017/10/wv_publicity_pre_launch_A_still_7.000001-08d7789.jpeg?quality=45&resize=620,413",
         scores: [
             "1",
             "4",
