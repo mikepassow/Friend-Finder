@@ -11,7 +11,7 @@ body{
     }
     
   .modal-dialog {
-      width: auto;
+      width: 400px;
       margin: 30px auto;
       display: inline-block;
     }
