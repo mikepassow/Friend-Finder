@@ -1,0 +1,23 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+  }
+  
+  
+  /* Center the modal window. */
+  .modal {
+      text-align: center;       
+    }
+    
+  .modal-dialog {
+      width: auto;
+      margin: 30px auto;
+      display: inline-block;
+    }
+  
+  #matchImg {
+      width:100%;
+  
+    }
