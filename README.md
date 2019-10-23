@@ -14,8 +14,6 @@
 <li>Bootstrap</li>
 </ul>
 
-
-
 <h2>Requirements</h2> 
 <ul>
 <li>Modularity in the form of separate files for server logic, storing of friends, views, and routing</li>
