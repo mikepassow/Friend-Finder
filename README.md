@@ -25,3 +25,11 @@
 <li>Calculate best match for user once survey is completed and return that match to the user</li>
 </ul>
 
+<h1>Screenshots of How it Works</h1>
+ <div>
+ <img src="/screenshots/1.png" width="400px"> 
+ </div>
+<hr>
+  <div>
+ <img src="/screenshots/1.png" width="400px"> 
+ </div>
