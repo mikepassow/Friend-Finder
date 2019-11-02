@@ -27,9 +27,13 @@
 
 <h1>Screenshots of How it Works</h1>
  <div>
- <img src="/screenshots/1.png" width="400px"> 
+ <img src="/screenshots/1.png" width="300px" height="300px"> 
  </div>
 <hr>
   <div>
- <img src="/screenshots/1.png" width="400px"> 
+ <img src="/screenshots/1.png" width="300px" height="300px"> 
+ </div>
+ <hr>
+ <div>
+ <img src="/screenshots/1.png" width="300px" height="300px"> 
  </div>
