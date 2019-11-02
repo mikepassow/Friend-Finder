@@ -31,9 +31,9 @@
  </div>
 <hr>
   <div>
- <img src="/screenshots/1.png" width="300px" height="300px"> 
+ <img src="/screenshots/2.png" width="300px" height="300px"> 
  </div>
  <hr>
  <div>
- <img src="/screenshots/1.png" width="300px" height="300px"> 
+ <img src="/screenshots/3.png" width="300px" height="300px"> 
  </div>
